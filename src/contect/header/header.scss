@@ -1,0 +1,104 @@
+@import '../scss/var.scss';
+
+.header{
+    background-color: $qora;
+    display: flex;
+    align-items: center;
+    width: 825px;
+    float: right;
+    border-radius: 10px;
+    padding: 14px 16px;
+
+    .list{
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+        margin-left: 80px;
+        margin-top: 15px;
+       
+    }
+
+    .link{
+        text-decoration-color: transparent;
+        color: $white;
+        font-family: Jost;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: -0.25px;
+        text-align: left;
+    }
+
+    .item{
+        position: relative;
+
+    }
+
+    .link:hover .heager_img{
+        width: 100%;
+        height: 3px;
+        position: absolute; 
+        margin-left: -48px;
+        padding-top: 1px;
+        margin-top: 25px;
+        background-image:url('../img/B.gif');
+        background-size: auto;
+        background-position: center ;
+        background-repeat: no-repeat;
+    }
+
+    .link:hover .heager_img2{
+        width: 100%;
+        height: 3px;
+        position: absolute; 
+        margin-left: -53px;
+        margin-top: 25px;
+        background-image:url('../img/B.gif');
+        background-size: auto;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .link:hover .heager_img3{
+        width: 100%;
+        height: 3px;
+        position: absolute; 
+        margin-left: -34px;
+        margin-top: 25px;
+        background-image:url('../img/B.gif');
+        background-size: auto;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .link:hover .heager_img4{
+        width: 100%;
+        height: 3px;
+        position: absolute; 
+        margin-left: -85px;
+        margin-top: 25px;
+        background-image:url('../img/B.gif');
+        background-size: auto;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+
+    .qosh{
+        margin-left: 100px;
+        font-family: Jost;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: left;
+        background-color: $pushti;
+        color: $white;
+        padding: 11px 25px;
+        border: none;
+        border-radius: 10px;
+    }
+}

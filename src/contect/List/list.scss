@@ -1,0 +1,49 @@
+@import '../scss/var.scss';
+
+.list_name{
+    font-family: Jost;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.1944444477558136px;
+    text-align: left;
+    color: $blue;
+    margin: 0;
+}
+
+.li_p{
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 17px;
+    margin-top: 10px;
+    color: $qora;
+}
+
+.lisssss{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border-bottom: 2px solid black;
+    min-height: 180px;
+    margin-bottom: 40px;
+}
+
+.li_text{
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 32px;
+    color: $qoraro;
+}
+
+.listcch{
+    padding: 0;
+    list-style: none;
+}
