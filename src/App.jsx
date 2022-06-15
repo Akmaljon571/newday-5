@@ -1,4 +1,4 @@
-import { Header, Main, Footer, Err, MainLayout, List, Post, Profile  } from './contect'
+import { Footer, Err, MainLayout, List, Post, Profile  } from './contect'
 import './App.scss';
 import { Routes, Route } from 'react-router-dom';
 function App() {
