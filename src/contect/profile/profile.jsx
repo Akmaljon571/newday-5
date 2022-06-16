@@ -1,8 +1,13 @@
 import './profile.scss';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 function Profile() {
-
+    const [profile, setProfile] = useState();
+    useEffect(() => {
+        fetch('')
+        
+    }, []);
     return (
         <div className='prof'>
             <img src="https://picsum.photos/300/300" width='300' height='300' className='randomImg' alt="picsum" />
