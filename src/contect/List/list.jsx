@@ -7,7 +7,7 @@ function List() {
     const { id } = useParams();
  
     useEffect(() => {
-        fetch(`https://jsonplaceholder.typicode.com/comments?postId=${id}`)
+        fetch(`https://jsonplaceholder.typicode.com/comments?postId=${id ? id : 1}`)
         .then((re) => re.json())
         .then((data) => setuser(data))
         .catch((err)=> console.log(err))
