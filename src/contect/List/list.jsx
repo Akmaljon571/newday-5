@@ -12,11 +12,6 @@ function List() {
         .catch((err)=> naviget('../err'))
     }, []);   
     
-    if (isNaN(id)) {
-        naviget('../about', {replace: true});    
-        return
-    }
-    
     return (
         <ul className='listcch'>
           {user.map((key) => (
