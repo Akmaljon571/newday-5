@@ -1,7 +1,5 @@
 import './profile.scss';
-import { useState, useEffect } from 'react'
-import loading from  '../img/loading_lg.gif'
-import { useParams, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Profile() {
 

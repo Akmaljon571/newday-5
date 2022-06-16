@@ -16,7 +16,7 @@ function Main() {
                <div onClick={Ux} className='Ux'>CSS</div>
                <div onClick={Ux} className='Ux'>SCSS</div>
                <div onClick={Ux} className='Ux'>JAVASCRIPT</div>
-               <div onClick={Ux} className='Ux'>GIT HUP</div>
+               <div onClick={Ux} className='Ux'>GITHUB</div>
                <div onClick={Ux} className='Ux'>BOOTSTRAP</div>
             </div>
             <div className="Fron">
