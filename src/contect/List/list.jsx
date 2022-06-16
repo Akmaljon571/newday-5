@@ -1,17 +1,18 @@
 import './list.scss'
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
 function List() {
     const [user, setuser] = useState([]); 
-    const{id} = useParams()
+    const { id } = useParams();
     useEffect(() => {
         fetch(`https://jsonplaceholder.typicode.com/comments?postId=${id}`)
         .then((re) => re.json())
         .then((data) => setuser(data))
+        .catch((err)=> console.log(err))
     }, []);   
-  
-
+    
+    
     return (
         <ul className='listcch'>
           {user.map((key) => (
