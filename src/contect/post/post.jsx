@@ -10,12 +10,12 @@ function Post() {
     const [ozgar, setozgar] = useState([]);
     const [sana, setsana] = useState(Math.random());
     const [input, setinput] = useState(JSON.parse(window.localStorage.getItem('stat')) || []);
+    const [string, setString] = useState(199);
     let modal = document.getElementById('modal')
     let modal1 = document.getElementById('modalcha')
     let omen = document.getElementById('comentariye')
     let shef = document.getElementById('shef')
-    
-    
+
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/posts')
         .then((re) => re.json())
@@ -27,11 +27,14 @@ function Post() {
         modal1.classList = 'span'
         omen.classList = 'list-group list-group-numbered modal cament';
     }
+    
+    
 
     let save = (evt) => {
         evt.preventDefault()
         if (shef.value <= 1) return
         setsana(sana + 1)
+        setString(199)
         
        let newObj = {
         id: sana,
@@ -87,6 +90,31 @@ function Post() {
     let btn10 = () =>{
         setozgar(fetchi.slice(90, 100))
     }
+
+    const [pro, setPro] = useState(1);
+    const [bro, setBro] = useState(2);
+   
+    let change = () =>{
+        if (shef.value.length == pro) {
+            setPro(pro + 1)
+            setBro(pro - 1)
+            setString(string - 1)
+        }  
+        if (shef.value.length == bro) {
+            setPro(pro - 1)
+            setBro(bro - 1)
+            setString(string + 1)
+        } 
+        if (string <= 0) {
+            setString(199)
+        }
+        if (shef.value.length == 0) {
+            setPro(1)
+            setBro(2)
+            setString(199)
+        }
+        console.log(pro, bro ,(shef.value.length));
+    }
   
     
 
@@ -133,9 +161,9 @@ function Post() {
                         <button type="button" onClick={none} className="btn-close"></button>
                     </div>
                     <div className="modal-body">
-                      <textarea id='shef' className='form-control bigControl' placeholder='text kirit' type="text" />
+                      <textarea onChange={change} id='shef' className='form-control bigControl' placeholder='text kirit' type="text" />
                       
-                      <span className="inputSana">199</span>
+                      <span className="inputSana">{string}</span>
                     </div>
                     <div className="modal-footer">
                     <button type="button" onClick={none} className="btn btn-secondary">Close</button>
