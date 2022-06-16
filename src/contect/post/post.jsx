@@ -113,7 +113,7 @@ function Post() {
             setBro(2)
             setString(199)
         }
-        console.log(pro, bro ,(shef.value.length));
+        
     }
   
     
