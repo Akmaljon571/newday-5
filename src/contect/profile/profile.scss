@@ -24,41 +24,107 @@
     text-decoration: none;
 }
 
-.prof{
-    background-color: #fff;
+.profile{
+    width: 825px;
+    height: 500px;
+    background-color: $qoraro;
+    display: flex;
+    position: relative;
+    color: $white;
     padding: 20px;
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    height: 500px;
-    justify-content: space-evenly;
 }
 
 .randomImg{
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
+    margin-right: 20px;
+    margin-top: 50px;
 }
 
-.profile{
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-}
-
-.pName{
-    color: $qora;
-    font-family: Jost;
-    font-size: 34px;
+.prof{
+    font-size: 15px;
     font-weight: 700;
-    line-height: 20px;
-    letter-spacing: -0.1944444477558136px;
+    line-height: 10px;
+    letter-spacing: -0.1805555522441864px;
     text-align: left;
-    margin: 0;
-    margin-bottom: 10px;
+    font-family: Jost;
+    
+    &_name{
+        font-size:38px;
+        font-weight: 700;
+        line-height: 10px;
+        letter-spacing: -0.1805555522441864px;
+        text-align: left;
+        font-family: Jost;
+        margin-top: 15px;
+        margin-left: -210px;
+        position: absolute;
+    }
+
+    &_username{
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 10px;
+        letter-spacing: -0.1805555522441864px;
+        text-align: left;
+        font-family: Jost;
+        margin-top: 75px;
+        position: absolute;
+    }
+
+    &_email{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 10px;
+        letter-spacing: -0.1805555522441864px;
+        text-align: left;
+        font-family: Jost;
+        margin-top: 120px;
+        margin-left: 5px;
+        position: absolute;
+        color: $white;
+    }
+
+    &_phone{
+        font-size: 18px;
+        margin-top: 290px;
+        margin-left: -210px;
+        position: absolute;
+        color: $white; 
+    }
+
+    &_web{
+        font-size: 18px;        
+        position: absolute;
+        margin-top: 265px;
+        margin-left: -210px;
+        color: $white;
+    }
+
+    &_company{
+        position: absolute;
+        font-size: 12px;
+        line-height: 2px;
+        font-weight: 400;
+        letter-spacing: normal;
+        margin-top: 450px;
+        margin-left: 300px;
+        color: $qora;
+    }
 }
 
-.pText{
-    color: $qora;
+.adress{
+   position: absolute;
+   margin-left: 8px;
+   margin-top: 145px;
+   color: $white; 
 }
 
-
-
+.randomLogo{
+    position: absolute;
+    margin-left: 470px;
+    width: 100px;
+    height: 100px;
+}

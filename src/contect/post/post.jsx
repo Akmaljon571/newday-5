@@ -19,7 +19,7 @@ function Post() {
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/posts')
         .then((re) => re.json())
-        .then((data) => (setfetchi(data) && setozgar(data.slice(0 ,10))))
+        .then((data) => (setfetchi(data) || setozgar(data.slice(0 ,10))))
     }, []);  
 
     let coment = (evt)=>{
