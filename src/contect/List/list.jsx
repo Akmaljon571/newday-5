@@ -1,13 +1,12 @@
 import './list.scss'
 import { useState, useEffect } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function List() {
     const [user, setuser] = useState([]);
     let naviget = useNavigate()
-    const {id} = useParams();
     useEffect(() => {
-        fetch(`https://jsonplaceholder.typicode.com/comments?postId=${id}`)
+        fetch(`https://jsonplaceholder.typicode.com/comments?postId=1`)
         .then((re) => re.json())
         .then((data) => setuser(data))
         .catch((err)=> naviget('../err'))
