@@ -1,16 +1,22 @@
 import './list.scss'
 import { useState, useEffect } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
 
 function List() {
     const [user, setuser] = useState([]);
- 
+    let naviget = useNavigate()
+    const {id} = useParams();
     useEffect(() => {
-        fetch(`https://jsonplaceholder.typicode.com/comments?postId=1`)
+        fetch(`https://jsonplaceholder.typicode.com/comments?postId=${id}`)
         .then((re) => re.json())
         .then((data) => setuser(data))
-        .catch((err)=> console.log(err))
+        .catch((err)=> naviget('../err'))
     }, []);   
     
+    if (isNaN(id)) {
+        naviget('../about', {replace: true});    
+        return
+    }
     
     return (
         <ul className='listcch'>
