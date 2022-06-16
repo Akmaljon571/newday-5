@@ -1,6 +1,6 @@
 import './header.scss'
 import log from '../img/bulb2.png'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
  
 
 function Header() {
@@ -12,28 +12,28 @@ function Header() {
             <nav className="nav">
                 <ul className="list">
                     <li className="item">
-                        <Link className='link' to='/'>
+                        <NavLink className={({isActive}) => isActive ? 'link nav-Link': 'link'} to='/'>
                            Home
                            <span className="heager_img"></span>
-                        </Link>
+                        </NavLink>
                     </li>
                     <li className="item">
-                        <Link className='link' to='/profile'>
+                        <NavLink className={({isActive}) => isActive ? 'link nav-Link': 'link'}  to='/profile'>
                            Profile
                            <span className="heager_img2"></span>
-                        </Link>
+                        </NavLink>
                     </li>
                     <li className="item">
-                        <Link className='link' to='/post'>
+                        <NavLink className={({isActive}) => isActive ? 'link nav-Link': 'link'}  to='/post'>
                            Post
                            <span className="heager_img3"></span>
-                        </Link>
+                        </NavLink>
                     </li>
                     <li className="item">
-                        <Link className='link' to='/post/2'>
+                        <NavLink className={({isActive}) => isActive ? 'link nav-Link': 'link'}  to='dcgfbn'>
                            PostSingle
                            <span className="heager_img4"></span>
-                        </Link>
+                        </NavLink>
                     </li>
                 </ul>
             </nav>
