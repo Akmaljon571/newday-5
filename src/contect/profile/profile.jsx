@@ -1,6 +1,5 @@
 import './profile.scss';
 import Logo from '../img/bulb2.png';
-import { Link, useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 function Profile() {
